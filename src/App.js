@@ -26,8 +26,11 @@ function App() {
     <UserContext.Provider value={[loggedInUser,setLoggedInUser]}>
       <p>Name: {loggedInUser.name} </p>
       <Router>
-         
+      <NavigationBar />
           <Switch>
+          <Route path="/home">
+            
+            </Route>
             <Route path="/home">
               <Home />
             </Route>
